@@ -1,0 +1,141 @@
+/* Reset Style */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Style */
+header {
+    background-color: #F6DCAC;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #01204E;
+    margin-left: 20px;
+}
+
+header .highlight {
+    color: #008080;
+}
+
+/* Main Content */
+main {
+    padding: 30px 50px;
+    background-color: #FCFAF5;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #01204E;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+/* Columns */
+.column {
+    width: 40%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    text-align: center;
+}
+
+.column.typo textarea {
+    width: 100%;
+    height: 480px; /* Ukuran tetap */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none; /* Mencegah resize */
+    overflow: auto; /* Scroll jika melebihi ukuran */
+    box-sizing: border-box;
+}
+
+.column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #01204E;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 5px;
+    border-bottom: 1px solid #EEE;
+}
+
+/* Hasil Baku */
+.column.baku p {
+    font-size: 18px;
+    color: #001530;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Button Style */
+.button {
+    background-color: #01204E;
+    color: #FFF;
+    padding: 12px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #001530;
+}
+
+
+#loading-indicator {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#loading-indicator p {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Optional: Add a spinning animation */
+#loading-indicator:before {
+    content: '';
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

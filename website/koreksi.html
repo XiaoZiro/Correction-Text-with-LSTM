@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koreksi Typo - TypoResolve</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/koreksi.css') }}">
+</head>
+<body>
+    <header>
+        <h1><span class="highlight">Typo</span>Resolve</h1>
+    </header>
+    <main>
+        <h2>Koreksi Kalimat Typo</h2>
+        <div class="container">
+            <!-- Input Kalimat Typo -->
+            <div class="column typo">
+                <h3>Masukkan Kalimat Typo</h3>
+                <textarea id="typo-input" placeholder="Ketik kalimat typo di sini"></textarea>
+            </div>
+            <!-- Hasil Kalimat Baku -->
+            <div class="column baku">
+                <h3>Hasil Kalimat Baku</h3>
+                <p id="baku-result">-</p>
+                
+                <!-- Loading Indicator inside this section -->
+                <div id="loading-indicator" style="display: none; text-align: center;">
+                </div>
+            </div>
+        </div>
+        <button class="button" onclick="koreksiKalimat()">Koreksi</button>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
